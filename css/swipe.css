@@ -343,3 +343,22 @@ body {
     margin-left: 10px;
   }
 }
+.skip-button-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#skipBtn {
+  background-color: #f0ad4e; /* Waarschuwingskleur (oranje) */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#skipBtn:hover {
+  background-color: #ec971f;
+}

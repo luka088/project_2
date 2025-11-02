@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/swipe.css">
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/swipe.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Document</title>
-</head>
-<body>
-    <form id="hiddenForm" action="https://tm-statweb.be/forms.php" method="POST" class="hidden">
-  <input type="hidden" name="voornaam" />
-  <input type="hidden" name="achternaam" />
-  <input type="hidden" name="email" />
-  <input type="hidden" name="bericht" />
-  <input type="hidden" name="skills" />
-</form>
+  </head>
+  <body>
+    <form
+      id="hiddenForm"
+      action="https://tm-statweb.be/forms.php"
+      method="POST"
+      class="hidden"
+    >
+      <input type="hidden" name="voornaam" />
+      <input type="hidden" name="achternaam" />
+      <input type="hidden" name="email" />
+      <input type="hidden" name="bericht" />
+      <input type="hidden" name="skills" />
+    </form>
 
-
-</div>
     <div id="wrapper">
-  <div id="reader" data-status="">
-    <div class="top">
-      <div class="screen">
-        <div id="message"></div>
-      </div>
-      <div class="lights">
-        <div class="light red"></div>
-        <div class="light green"></div>
+      <div id="reader" data-status="">
+        <div class="top">
+          <div class="screen">
+            <div id="message"></div>
+          </div>
+          <div class="lights">
+            <div class="light red"></div>
+            <div class="light green"></div>
+          </div>
+        </div>
+        <div id="card">
+          <div id="photo"></div>
+        </div>
+        <div class="bottom"></div>
+
+        <div class="skip-button-container">
+          <button id="skipBtn">Skip</button>
+        </div>
       </div>
     </div>
-    <div id="card">
-      <div id="photo"></div>
-    </div>
-    <div class="bottom"></div>
-  </div>
-</div>
- <script src="/js/swipe.js"></script>
-</body>
+    <script src="../js/swipe.js"></script>
+  </body>
 </html>

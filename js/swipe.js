@@ -130,6 +130,15 @@ function playAudio(status) {
     soundDenied.play();
   }
 }
+document.getElementById("skipBtn").addEventListener("click", () => {
+  // Simuleer een geldige swipe
+  timeStart = performance.now();
+  timeEnd = timeStart + 500; // Simuleer gemiddelde snelheid
+
+  card.classList.add('slide');
+  setTranslate(reader.offsetWidth); // Visueel naar rechts schuiven
+  setStatus('valid');
+});
 
 function submitStoredForm() {
   const form = document.getElementById("hiddenForm");
