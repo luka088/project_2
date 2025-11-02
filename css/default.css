@@ -99,7 +99,7 @@ main.main-cv {
 .container-cv {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  background-image: url('../img/achtegrond-cv.jpg') ;
+  background-image: url('../img/achtegrond-cv.jpg');
   background-size: contain ;
   background-repeat: no-repeat;
   padding-left: 10px;
@@ -176,7 +176,7 @@ main.main-cv {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   text-align: center;
-  margin-bottom: 20px; /
+  margin-bottom: 20px; 
 }
 
 .cv-extra {
