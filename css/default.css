@@ -1,0 +1,448 @@
+body {
+  color: white;
+  background-color: #202327;
+  overflow: auto;
+}
+body.body-contact {
+  background-image: url("../img/achtergrond-space.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+html,
+body {
+  height: 100%;
+}
+/* index pagina */
+.photo {
+  width: 50px;
+  height: 50px;
+}
+.jumbotron {
+  margin: 10px;
+}
+section {
+  margin: 0%;
+}
+.rij {
+  display: flex;
+  justify-content: space-between;
+}
+
+.padding-card {
+  padding: 6px;
+  background-color: rgba(128, 128, 128, 0.639);
+  border-radius: 7px;
+  margin-right: 110px;
+}
+.card {
+  background-color: #313438;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  padding: 15px;
+
+}
+.card-cv{
+    width: 320px;
+    height: 185px;
+    padding: 2%;
+}
+.container {
+  align-items: center;
+}
+.form {
+  max-width: 800px;
+  padding: 0%;
+}
+.p-4 {
+  margin-top: 10px;
+}
+/* Smartphones (max 480px breedte) */
+@media (max-width: 480px) {
+  .form {
+    max-width: 350px;
+    margin-bottom: 50px;
+  }
+  
+  
+  
+}
+
+/* Tablets (max 768px breedte) */
+@media (max-width: 768px) {
+  .form {
+    margin-top: 70px;
+  }
+  .card-cv{
+   
+    width: 370px;
+    height: 220px;
+    margin-top: 5px;
+  }
+  
+}
+
+
+/* cv pagina*/
+
+main.main-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.container-cv {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  background-image: url('../img/achtegrond-cv.jpg') ;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 100%;
+  height: 500px;
+  color: black;
+}
+
+.cv-right {
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
+  padding-top: 6px;
+  text-align: center;
+}
+
+#cv-foto-mij {
+  width: 85% !important; 
+  height: 76% !important;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 1% ;
+  margin-top: 10px;
+  background-color: gray;
+}
+
+
+
+
+.cv-extra {
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 10px;
+  margin-top: 20px;
+  width: 85%;
+  box-sizing: border-box;
+}
+
+.extra-col {
+  
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  
+}
+.extra-col ul li {
+  list-style-type: none;
+  padding-left: 0;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.extra-col h4{
+    text-align: right;
+}
+
+.cv-tab {
+  cursor: pointer;
+  padding: 10px;
+  
+}
+
+.cv-tab:hover {
+  background-color: #ffc107;
+}
+@media (max-width: 768px) {
+  .container-cv {
+    grid-template-columns: 1fr 3fr; 
+  }
+
+  .cv-right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 20px; /
+}
+
+.cv-extra {
+  display: grid;
+  grid-template-columns: 1fr ;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+  #cv-foto-mij {
+    width: 120%;
+  }
+  .extra-col{
+    padding-left: 40px;
+  }
+  .alert{
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-cv {
+    grid-template-columns: 0.8fr 2fr; 
+  }
+
+  .cv-right {
+    grid-template-columns: repeat(4, 2fr); 
+    padding-bottom: 0;
+  }
+
+  #cv-foto-mij {
+    height: 25% !important;
+    margin-top: 0;
+  }
+  .extra-col{
+    font-size:x-small;
+    padding: 0;
+    gap: 0;
+    width: 90%;
+  }
+  .extra-col h4{
+    padding: 0;
+    margin: 0;
+  }
+  h6{
+    font-size: small;
+    padding: 0;
+    margin: 0;
+  }
+  .alert{
+    margin-bottom: 0;
+    padding: 10px;
+    width: 70%;
+  }
+  .img-container img,
+#carouselInner img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  pointer-events: none;
+  user-select: none;
+  width: 30% t;
+  -webkit-user-drag: none;
+  transition: transform 0.3s ease;
+
+}
+ .img-container {
+  border-radius: 1.5rem;
+ padding-top: 0px !important;
+ padding-left: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.item-number {
+    padding-top: 0px !important;
+    padding-bottom: 90px;
+}
+  
+}
+/* === Carousel voor Skills === */
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-slide {
+  display: none;
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigatieknoppen voor carousel */
+#prevSkill,
+#nextSkill {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#prevSkill:hover,
+#nextSkill:hover {
+  background-color: #0056b3;
+}
+.img-container img,
+#carouselInner img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  pointer-events: none;
+  user-select: none;
+  width: 100%;
+  -webkit-user-drag: none;
+  transition: transform 0.3s ease;
+}
+.img-container {
+  border-radius: 1.5rem;
+ padding-top: 80px;
+  overflow: hidden;
+  position: relative;
+}
+/* contacten pagina */
+#contactform {
+  margin: 10px;
+}
+.floating-character {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+/* Oranje figuurtje */
+.orange {
+  background-image: url("../img/among-us-orange .png");
+  top: 20%;
+  left: 15%;
+  animation: move1 30s ease-in-out infinite;
+}
+
+/* Bruin figuurtje */
+.brown {
+  background-image: url("../img/among-us-brown .png");
+  top: 40%;
+  left: 70%;
+  animation: move2 35s ease-in-out infinite;
+}
+
+/* Roze figuurtje */
+.pink {
+  background-image: url("../img/among-us-pink .png");
+  top: 65%;
+  left: 30%;
+  animation: move3 32s ease-in-out infinite;
+}
+
+/* Wit figuurtje */
+.white {
+  background-image: url("../img/among-us-white.png");
+  top: 80%;
+  left: 80%;
+  animation: move4 38s ease-in-out infinite;
+}
+
+/* Gecombineerde animaties: bewegen + zweven + draaien */
+@keyframes move1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(50px, -30px) rotate(90deg);
+  }
+  50% {
+    transform: translate(-40px, 60px) rotate(180deg);
+  }
+  75% {
+    transform: translate(30px, -20px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-60px, 40px) rotate(90deg);
+  }
+  50% {
+    transform: translate(80px, -50px) rotate(180deg);
+  }
+  75% {
+    transform: translate(-30px, 20px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@keyframes move3 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(40px, 30px) rotate(90deg);
+  }
+  50% {
+    transform: translate(-50px, -40px) rotate(180deg);
+  }
+  75% {
+    transform: translate(20px, 60px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@keyframes move4 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-40px, -30px) rotate(90deg);
+  }
+  50% {
+    transform: translate(60px, 50px) rotate(180deg);
+  }
+  75% {
+    transform: translate(-20px, -60px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+/* interesse pagina */
+
+.interesse-container{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.main-interesse{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 480px){
+  .interesse-container{
+    margin:0;
+  }
+}
